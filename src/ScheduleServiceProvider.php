@@ -10,6 +10,7 @@ class ScheduleServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->afterResolving(Schedule::class, function (Schedule $schedule) {
+            /*test deneme*/
             if(env('MAINTENANCE_MODE_DOWN') && env('MAINTENANCE_MODE_DOWN') !== null && env('MAINTENANCE_MODE_UP') && env('MAINTENANCE_MODE_UP') !== null) {
                 $schedule->command('down')
                     ->cron(env('MAINTENANCE_MODE_DOWN'))
