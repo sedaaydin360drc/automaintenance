@@ -1,0 +1,26 @@
+{
+  "name": "sedaaydin360drc/automaintenance",
+  "description": "Auto Maintenance Mode",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Sedaaydin360drc\\Automaintenance\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Seda AYDIN",
+      "email": "seda.aydin@360drctech.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sedaaydin360drc\\Automaintenance\\ScheduleServiceProvider"
+      ]
+    }
+  }
+}
