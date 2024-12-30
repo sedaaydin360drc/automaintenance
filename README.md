@@ -12,11 +12,11 @@ composer require sedaaydin360drc/automaintenance
 
 Paket kurulumundan sonra env dosyasına bakım modunu açacak ve bakım modunu kapatacak tarihleri belirtmemiz gerekiyor:
 
-Bakım modunu kapatacak tarih için: 
+Bakım modunu açacak tarih için: 
 ```
 MAINTENANCE_MODE_DOWN="37 11 24 1 *"
 ``` 
-Bakım modundan çıkılması istenen tarih için: 
+Bakım modunu kapatacak tarih için: 
 ```
 MAINTENANCE_MODE_UP="38 11 24 1 *"
 ``` 
